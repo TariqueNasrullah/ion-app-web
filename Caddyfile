@@ -2,7 +2,7 @@ localhost:9090 {
   root * /app/dist
   file_server
 
-  tls internal
+  tls /certs/localhost.crt /certs/localhost.key
 
   reverse_proxy /biz.Biz/Signal signal:5551 {
   }

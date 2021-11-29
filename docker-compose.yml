@@ -7,6 +7,7 @@ services:
       # Dev caddy file
       - "./Caddyfile:/etc/caddy/Caddyfile"
       - "caddy:/data"
+      - "./certs/:/certs/"
     ports:
       # Dev port
       - 9090:9090
